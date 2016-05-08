@@ -5,7 +5,7 @@ import tkinter as tk
 from itertools import chain
 from random import randrange
 
-from py2048 import Py2048
+from .py2048logic import Py2048
 
 _WIDTH = _HEIGHT = 512
 _WELCOMEMSG = (
@@ -31,7 +31,7 @@ _FONT = {
     'XS': ('Helvetica', 16, 'bold'),
 }
 
-class Application(tk.Frame):
+class App(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
         self._game = None
@@ -151,11 +151,11 @@ class Application(tk.Frame):
         for cell in self._cells[0]:
             cell.config(font=_FONT['M'])
 
-def main():
-    app = Application()
+def runApp():
+    app = App()
     app.waitForStart()
     app.focus()
     app.mainloop()
 
 if __name__ == '__main__':
-    main()
+    runApp()

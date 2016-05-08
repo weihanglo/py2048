@@ -1,13 +1,22 @@
-# 2048 in Terminal and TKinter
+2048 in TKinter
+===============
+A simple 2048 clone in Python TKinter.
 
-Dependency: None
-
-Terminal Version
-```bash
-python3 py2048.py
+## Installation
+```
+pip install https://github.com/weihanglo/py2048
 ```
 
-Tkinter Version
-```bash
-python3 py2048.py
+## Environment
+Python 3.5.1
+
+## Dependency
+None
+
+## Usage
 ```
+from py2048 import runApp
+runApp()
+```
+
+_Weihang Lo_ _2016.05_

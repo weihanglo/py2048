@@ -5,7 +5,7 @@ import os
 import copy
 import random
 
-from getch import getch
+from .getch import getch
 
 class Py2048(object):
     UP = 2
