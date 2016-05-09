@@ -5,8 +5,6 @@ import os
 import copy
 import random
 
-from .getch import getch
-
 class Py2048(object):
     UP = 2
     LEFT = 1
@@ -92,10 +90,10 @@ class Py2048(object):
             print('----------------------------')
 
         direction = {
-            'A': [self.UP, "UP"],
-            'B': (self.DOWN, "DOWN"),
-            'C': (self.RIGHT, "RIGHT"),
-            'D': (self.LEFT, "LEFT"),
+            'h': (self.LEFT, "LEFT"),
+            'j': (self.DOWN, "DOWN"),
+            'k': (self.UP, "UP"),
+            'l': (self.RIGHT, "RIGHT"),
         }
         
         self.add_tile()
@@ -105,7 +103,7 @@ class Py2048(object):
             while old_board == self.board:
                 clear()
                 print_board()
-                char = getch()
+                char = str(input()).lower()
                 if char == 'q':
                     break
                 if direction.get(char):
@@ -117,7 +115,7 @@ class Py2048(object):
             self.check_gameover()
         print("\nGame Over")
 
-def main():
+def runTerm():
     print('Welcome to 2048!')
     print('================')
     print('Please use arrow keys to play.')
@@ -136,4 +134,4 @@ def main():
     game.gameloop()
 
 if __name__ == '__main__':
-    main()
+    runTerm()
