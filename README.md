@@ -26,7 +26,7 @@ pip install https://github.com/weihanglo/py2048/archive/master.zip
 
 via `git clone`:
 ```bash
-git clone https://github.com/weihang/py2048.git
+git clone https://github.com/weihanglo/py2048.git
 cd py2048
 python3 setup.py install
 ```
