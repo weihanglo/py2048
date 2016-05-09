@@ -2,6 +2,8 @@
 ===============
 A simple 2048 clone in Python TKinter.
 
+![demo](demo.png)
+
 ## Usage
 
 ```python
@@ -31,7 +33,7 @@ python3 setup.py install
 
 ## Tests
 
-Pass all tests under Python 3.5.1
+All tests are passed under Python 3.5.1
 ```
 python3 setup.py test
 ```
