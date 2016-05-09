@@ -5,7 +5,7 @@ import tkinter as tk
 from itertools import chain
 from random import randrange
 
-from logic import Py2048
+from .logic import Py2048
 
 _WIDTH = _HEIGHT = 512
 _WELCOMEMSG = (

@@ -4,7 +4,7 @@
 import unittest
 from copy import deepcopy
 
-from logic import Py2048
+from py2048.logic import Py2048
 
 class TestPrivate2048(unittest.TestCase):
     def setUp(self):

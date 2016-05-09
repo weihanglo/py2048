@@ -7,6 +7,6 @@ setup(
     url='https://github.com/weihanglo/py2048',
     author='Weihang Lo',
     author_email='weihanglo@protonmail.com',
-    py_modules=['py2048'],
+    packages=['py2048'],
     test_suite="tests",
 )

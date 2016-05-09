@@ -17,7 +17,9 @@ None
 
 via `pip`:
 ```bash
-pip install git+https://github.com/weihang/py2048.git
+pip install git+https://github.com/weihanglo/py2048.git
+# or
+pip install https://github.com/weihanglo/py2048/archive/master.zip
 ```
 
 via `git clone`:
