@@ -5,15 +5,15 @@ import tkinter as tk
 from itertools import chain
 from random import randrange
 
-from logic.logic import Py2048
+from logic import Py2048
 
 _WIDTH = _HEIGHT = 512
 _WELCOMEMSG = (
     ('', '2048', 'in', 'Py', ''),
-    ('', 'Select', '', 'Board\nSize', ''), 
+    ('', 'Select', '', 'Board\nSize', ''),
     (3, '', 4, '', 5),
     ('', 6, '', 7, ''),
-    ('Source\nCode', 'https://', 'github.com', '/weihanglo', '/py2048'),
+    ('View\nSource\nOn', 'https://', 'github.com', '/weihanglo', '/py2048'),
 )
 _COLOR = {
     'mainBg': '#bbada0', 'darktext': '#776e65', 'lighttext': '#f9f6f2',
@@ -79,9 +79,9 @@ class App(tk.Frame):
     def _mouseActionWhileSet(self, event):
         widget = event.widget
         value = widget.cget('text')
-        value = { 
+        value = {
             '4': lambda: int(value) if value else 0,
-            '7': lambda: widget.config(font=_FONT['2XL']), 
+            '7': lambda: widget.config(font=_FONT['2XL']),
             '8': lambda: widget.config(font=_FONT['M']),
         }[event.type]()
         if value:
